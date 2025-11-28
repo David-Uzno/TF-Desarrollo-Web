@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #e60012;
+    color: white;
+    padding: 15px 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #cc000e; 
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+}
+
+.logo .version {
+    font-size: 0.6em;
+    vertical-align: top;
+    margin-left: 5px;
+    padding: 3px 5px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff3344;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+h2, h3 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #e60012;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: #333;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 0;
+    border-bottom: none;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-grid article {
+    flex-basis: 30%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #e60012;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #eee;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        flex: auto;
+        max-width: 100%;
+    }
+
+    .feature-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-grid article {
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        margin: 5px;
+        padding: 8px 12px;
+    }
+
+    .feature-grid article {
+        flex-basis: 100%;
+    }
+    
+    .contact-section form {
+        padding: 20px;
+    }
+}
