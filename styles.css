@@ -215,6 +215,23 @@ footer a {
     margin-bottom: 24px;
 }
 
+.contact-warning {
+    background: #ffe0e0;
+    border: 2px solid #ff4d4d;
+    color: #b30000;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contact-warning a {
+    color: #b30000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 @media (max-width: 600px) {
     .gallery-img {
         max-width: 100%;

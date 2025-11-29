@@ -39,7 +39,7 @@ const manejarEnvio = (evento) =>
     {
         // Éxito
         console.log('Formulario validado y procesado. Datos:', { Nombre: nombre, Mensaje: mensaje });
-        alert(`¡Gracias ${nombre}! Tu reporte ha sido recibido por el equipo Alpha 0.5.`);
+        alert(`¡Gracias ${nombre}!.\n\nEste es un formulario de prueba. Si tienes un reporte o intento de comunciación real, por favor dirígete al servidor de Discord.`);
         formularioContacto.reset();
     }
     else
